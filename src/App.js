@@ -38,7 +38,7 @@ export default function App() {
     for (let i = 0; i < arr.length; i++) {
       arr[i].nameColor = "";
       assignRandomColorToObject(arr[i]);
-      formatMediaLocation(arr[i]);
+      //formatMediaLocation(arr[i]);
     }
 
     updateComments(arr);
@@ -49,11 +49,11 @@ export default function App() {
       getColors[getRandomIntInclusive(0, getColors.length - 1)];
   }
 
-  function formatMediaLocation(object) {
-    if (object.thumbnail) {
-      object.thumbnail = "/" + object.thumbnail;
-    }
-  }
+  // function formatMediaLocation(object) {
+  //   if (object.thumbnail) {
+  //     object.thumbnail = "/" + object.thumbnail;
+  //   }
+  // }
 
   function updateComments(arr) {
     setComments([...arr]);
