@@ -296,6 +296,8 @@ button {
   color: var(--grey-darker);
   border-color: var(--grey-darker);
   border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .winners-list {
