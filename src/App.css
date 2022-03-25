@@ -16,7 +16,7 @@
   --tools-shadow-radius: 20px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1025px) {
   .btn-pick-winner:hover {
     background: linear-gradient(#ffe0a6, var(--orange-light));
   }
