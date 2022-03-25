@@ -286,7 +286,6 @@ button {
 }
 
 .btn-route {
-  /* font-size: calc(10px + 2vmin); */
   background-color: var(--grey-darker);
   padding: 10px;
 }
