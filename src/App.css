@@ -16,7 +16,7 @@
   --tools-shadow-radius: 20px;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .btn-pick-winner:hover {
     background: linear-gradient(#ffe0a6, var(--orange-light));
   }
@@ -177,6 +177,8 @@ button {
   position: fixed;
   z-index: -1;
 
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   background-image: url("./images/tg-bg-light-big.png");
@@ -287,7 +289,7 @@ button {
 
 .btn-route {
   background-color: var(--grey-darker);
-  padding: 10px;
+  padding: 7px;
 }
 
 .btn-info {

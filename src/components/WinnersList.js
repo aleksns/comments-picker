@@ -12,7 +12,7 @@ export default function WinnersList(props) {
         <ul className="winners-list">
           {listOfWinners.map((comment) => (
             <ChatMessage
-              key={comment.id}
+              key={comment.from_id}
               comment={comment}
             />
           ))}

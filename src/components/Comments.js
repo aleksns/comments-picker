@@ -7,7 +7,7 @@ export default function Comments(props) {
     <div className="container-comments-list">
       <div className="img-background"></div>
         {comments.map((comment) => (
-            <ChatMessage key={comment.id} comment={comment}/>
+            <ChatMessage key={comment.from_id} comment={comment}/>
         ))}
     </div>
   );

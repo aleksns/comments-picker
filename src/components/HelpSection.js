@@ -8,19 +8,19 @@ export default function HelpSection() {
       <div className="img-background"></div>
       <div className="container-help">
         <h3 style={{ color: "#69B2FB" }}>
-          Как программа вычисляет победителя?
+         How Does The Program Pick a Winner?
         </h3>
         <p className="p-text-help">
-          1. Перед запуском программы, происходит сортировка комментариев
-          участников по уникальному "user_id" значению, чтобы уравнять шансы и
-          оставить 1 комментарий за 1 человеком.
+        1. Before starting the program, comments are sorted
+          by unique "user_id" value to even the odds and
+           leave 1 comment per 1 person.
         </p>
         <p className="p-text-help">
-          2. При нажатии кнопки "Случайной Генерации", победитель генерируется
-          по стандартной формуле, на основе{" "}
-          {<span style={{ color: "#FFE44C" }}>Math.random</span>}. Формула
-          выбирает случайное значение в указанном диапазоне чисел, включая min и
-          max значения, более подробно{" "}
+        2. When you click the "Generate" button, a winner is generated
+           according to the standard formula, based on{" "}
+          {<span style={{ color: "#FFE44C" }}>Math.random</span>}. Formula
+           selects a random value in the specified range of numbers, including min and
+           max values, more details{" "}
           {
             <a
               href={urlMathFormula}
@@ -29,14 +29,14 @@ export default function HelpSection() {
               ТУТ
             </a>
           }
-          . На основе полученного случайного числа, выбирается комментарий из
-          списка.
+          . Based on the received random number, a comment is selected from the
+           list.
         </p>
         <p className="p-text-help">
-          3. После того, как комментарий-победитель был выбран, он удаляется из
-          общего массива комментариев, чтобы избежать повторный выигрыш (хотя,
-          какие были бы шансы выиграть при таком раскладе?)
+        3. Once a winning comment has been selected, it is removed from
+           the array of comments-participants
         </p>
+        <p>Database of comments is generated with mockaroo.com </p>
       </div>
       <GithubLinkWithIcon />
     </div>

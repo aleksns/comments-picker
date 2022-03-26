@@ -24,7 +24,7 @@ export default function PickWinner(props) {
       <>
         <div className="chat-message">
           <h5>
-            Здесь появится сообщение победителя. Нажмите кнопку, чтобы начать.
+            Winner's message will be displayed here. Press the button to start.
           </h5>
         </div>
       </>
@@ -34,7 +34,7 @@ export default function PickWinner(props) {
   return (
     <div className="pick-winner-container container-element tools">
       <button onClick={handlePickWinner} className="btn-pick-winner">
-        ВЫБРАТЬ
+        GENERATE
       </button>
       {winnerComment == null ? (
         <MessagePlaceholder />

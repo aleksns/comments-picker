@@ -32,7 +32,7 @@ export default function App() {
     arr = arr.filter(
       (arr, index, self) =>
         index ===
-        self.findIndex((t) => t.from_id === arr.from_id && t.type === "message")
+        self.findIndex((t) => t.from_id === arr.from_id) // && t.type === "message"
     );
 
     for (let i = 0; i < arr.length; i++) {

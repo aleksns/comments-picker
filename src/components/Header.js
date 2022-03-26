@@ -9,17 +9,17 @@ export default function Header(props) {
 
   return (
     <header id="appHeader">
-      <button className="btn-info header-tools-items">
-        <NavLink to="/help" className="btn-info">?</NavLink>
+      <button className="btn-route header-tools-items">
+        <NavLink to="/help">?</NavLink>
       </button>
-      <h2 className="header-tools-items">Участников: {numOfParticipants}</h2>
+      <h2 className="header-tools-items">Participants: {numOfParticipants}</h2>
       {location.pathname == "/" ? (
         <button className="btn-route header-tools-items">
-          <NavLink to="/comments">Комментарии</NavLink>
+          <NavLink to="/comments">Comments</NavLink>
         </button>
       ) : (
         <button className="btn-route header-tools-items">
-          <NavLink to="/">Главная</NavLink>
+          <NavLink to="/">Home</NavLink>
         </button>
       )}
     </header>

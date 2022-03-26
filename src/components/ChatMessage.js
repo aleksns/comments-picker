@@ -23,7 +23,7 @@ export default function ChatMessage(props) {
           </a>
           <UserInfo comment={comment} isIdVisible={isIdVisible} />
         </div>
-        {comment.text == "" ? (
+        {comment.thumbnail? (
           <>
             <img
               src={comment.thumbnail}
