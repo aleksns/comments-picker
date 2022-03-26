@@ -35,8 +35,10 @@ export default function HelpSection() {
         <p className="p-text-help">
         3. Once a winning comment has been selected, it is removed from
            the array of comments-participants
-        </p>
-        <p>Database of comments is generated with mockaroo.com </p>
+        </p>    
+        <p className="p-text-help">
+          4. Press on a participants name to see their unique ID</p>
+        <p style={{color: "#BDC3C7", fontWeight: "normal"}}><em>Database of comments is generated with mockaroo.com</em> </p>
       </div>
       <GithubLinkWithIcon />
     </div>
