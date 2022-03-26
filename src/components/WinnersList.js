@@ -8,7 +8,7 @@ export default function WinnersList(props) {
   function ListOfWinners() {
     return (
       <>
-        <h3>Победители</h3>
+        <h3>Winners</h3>
         <ul className="winners-list">
           {listOfWinners.map((comment) => (
             <ChatMessage
@@ -24,7 +24,7 @@ export default function WinnersList(props) {
   function ListOfWinnersPlaceholder() {
     return (
       <>
-        <h4>Пока ещё никто не выиграл :(</h4>
+        <h4>No one has won yet :(</h4>
         <img src={catImg} className="img-cat"></img>
       </>
     );
