@@ -3,6 +3,13 @@ import GithubLinkWithIcon from "./GithubLinkWithIcon";
 
 export default function HelpSection() {
   const urlMathFormula = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random";
+
+
+  const openInNewTab = () => {
+    const newWindow = window.open(urlMathFormula, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div className="container-element tools">
       <div className="img-background"></div>
@@ -17,16 +24,16 @@ export default function HelpSection() {
         </p>
         <p className="p-text-help">
         2. When you click the "Generate" button, a winner is generated
-           according to the standard formula, based on{" "}
-          {<span style={{ color: "#FFE44C" }}>Math.random</span>}. Formula
+           according to the standard formula, based on
+          "Math.random" Formula
            selects a random value in the specified range of numbers, including min and
            max values, more details{" "}
           {
             <a
-              href={urlMathFormula}
-              style={{ color: "#459ef8", textDecoration: "underline" }}
+              onClick={openInNewTab}
+              style={{ color: "#459ef8", textDecoration: "underline", cursor: "pointer" }}
             >
-              ТУТ
+              HERE
             </a>
           }
           . Based on the received random number, a comment is selected from the
@@ -38,7 +45,7 @@ export default function HelpSection() {
         </p>    
         <p className="p-text-help">
           4. Press on a participants name to see their unique ID</p>
-        <p style={{color: "#BDC3C7", fontWeight: "normal"}}><em>Database of comments is generated with mockaroo.com</em> </p>
+        <p style={{color: "#BDC3C7", fontWeight: "normal"}}><em>Current database of comments is generated with mockaroo.com</em> </p>
       </div>
       <GithubLinkWithIcon />
     </div>

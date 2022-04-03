@@ -8,6 +8,8 @@
   --blue-lighter: #459ef8;
   --grey-dark: #455d75;
   --grey-darker: #273542;
+  --grey-black: #1a232c;
+  --grey-black-lighter: #202b36;
   --grey-lighter: #65819c;
   --bone-color: #dfdfdf;
   --transition-time: 0.4s;
@@ -16,13 +18,17 @@
   --tools-shadow-radius: 20px;
 }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (min-width: 1024px) {
   .btn-pick-winner:hover {
-    background: linear-gradient(#ffe0a6, var(--orange-light));
+    background-color: var(--grey-black);
   }
   
   .btn-pick-winner:active {
-    background: linear-gradient(#ffdd9f, var(--orange-lighter));
+    background-color: var(--grey-black-lighter);
   }
 
   .btn-route:hover {
@@ -283,7 +289,7 @@ button {
   bottom: 0;
   margin: 20px;
   padding: 15px;
-  background: linear-gradient(#ffa600, #ffc353);
+  background-color: var(--grey-darker);
 }
 
 .btn-route {
