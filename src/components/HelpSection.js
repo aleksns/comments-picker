@@ -6,7 +6,7 @@ export default function HelpSection() {
 
 
   const openInNewTab = () => {
-    const newWindow = window.open(urlMathFormula, "_blank", "noopener,noreferrer");
+    const newWindow = window.open(urlMathFormula, "_blank", "noopener noreferrer");
     if (newWindow) newWindow.opener = null;
   };
 
